@@ -4,17 +4,19 @@ An exploration of sorting in Java.
 
 Authors
 
-* Your name here.
+* Sheilla Muligande
 * Samuel A. Rebelsky (starter code)
 
 Acknowledgements
 
 * _Forthcoming_.
 
-This code may be found at <https://github.com/USERNAME/mp-sorting-maven>. The original code may be found at <https://github.com/Grinnell-CSC207/mp-sorting-maven>.
+This code may be found at <https://github.com/gwiza-muli/mp-sorting-maven.git>. The original code may be found at <https://github.com/Grinnell-CSC207/mp-sorting-maven>.
 
 Description of custom sorting algorithm
 ---------------------------------------
+
+REMEMBER TO UPDATE!!!!!!!!!!!!!!!!!!!!!!!!!1
 
 Notes on using Copilot (or other AI)
 ------------------------------------
