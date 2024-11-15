@@ -8,7 +8,7 @@ Authors
 * Samuel A. Rebelsky (starter code)
 
 Acknowledgements
-
+Mitch Paiva for helping me understand Sam's diagram on the DNF algorithm
 * _Forthcoming_.
 
 This code may be found at <https://github.com/gwiza-muli/mp-sorting-maven.git>. The original code may be found at <https://github.com/Grinnell-CSC207/mp-sorting-maven>.
