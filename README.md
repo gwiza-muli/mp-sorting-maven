@@ -15,10 +15,14 @@ This code may be found at <https://github.com/gwiza-muli/mp-sorting-maven.git>. 
 
 Description of custom sorting algorithm
 ---------------------------------------
+I applied selection sort to subarrays of a selected size, then I sorted those subarrays using insertion sort. 
 
 REMEMBER TO UPDATE!!!!!!!!!!!!!!!!!!!!!!!!!1
 
 Notes on using Copilot (or other AI)
 ------------------------------------
+
+I used Chatgpt and it fixed the inner for loop in the insertion sort algorithm I had. I had made the mistake of starting the index
+j at 0 instead of i, but it initialized it to i + 1. It was pretty straightforward and I understood the mistake I made.
 
 _This section is optional_
