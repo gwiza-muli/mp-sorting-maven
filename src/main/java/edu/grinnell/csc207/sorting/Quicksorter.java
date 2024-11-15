@@ -1,6 +1,7 @@
 package edu.grinnell.csc207.sorting;
 
 import java.util.Comparator;
+import java.util.Random;
 
 /**
  * Something that sorts using Quicksort.
@@ -55,6 +56,55 @@ public class Quicksorter<T> implements Sorter<T> {
    */
   @Override
   public void sort(T[] values) {
-    // STUB
+    quicksort(values, 0,values.length - 1);
   } // sort(T[])
+
+  public void quicksort(T[] values, int lb, int ub){
+    if(lb >= ub){
+      return;
+    }
+    int[] dnf = dutchNationalFlag(values,lb,ub);
+    quicksort(values,lb, dnf[0] - 1);
+    quicksort(values, dnf[1] + 1, ub);
+  }
+
+  public int[] dutchNationalFlag(T[] values, int lb, int ub){
+    Random rand = new Random();
+    int pivotIndex = lb + rand.nextInt(ub - lb + 1);
+    T pivot = values[pivotIndex];
+    swap(values,pivotIndex,lb);
+
+    int red = lb; 
+    int blue = ub;
+    int curr = lb + 1;
+
+    while(curr <= blue){
+      if (order.compare(values[curr], pivot) > 0){
+        swap(values, curr, red);
+        red++;
+        curr++;
+      } else if (order.compare(values[curr], pivot) > 0){
+        swap(values, curr, blue);
+        blue--;
+      } else {
+        curr++;
+      }
+    }
+    return new int[]{red, blue};
+  }
+/**
+ * 
+ * @param values the array whose values we are swapping.
+ * @param indexOne index of first element
+ * @param indexTwo index of second element
+ */
+  public void swap(T[]values, int indexOne, int indexTwo){
+    T val = values[indexOne];
+    values[indexOne] = values[indexTwo];
+    values[indexTwo] = val;
+  }
+
+
+
+
 } // class Quicksorter
