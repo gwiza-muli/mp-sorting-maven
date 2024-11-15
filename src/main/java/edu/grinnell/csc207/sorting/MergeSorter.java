@@ -49,44 +49,44 @@ public class MergeSorter<T> implements Sorter<T> {
   public void sort(T[] values) {
     if (values.length <= 1) {
       return;
-    }
+    } //if
     int middle = values.length / 2;
     int leftIndex = 0;
     int rightIndex = 0;
     int currIndex = 0;
 
-    T[] LArray = (T[]) new Object[middle];
-    T[] RArray = (T[]) new Object[values.length - middle]; // might need to subtract 1??
+    T[] leftArray = (T[]) new Object[middle];
+    T[] rightArray = (T[]) new Object[values.length - middle]; // might need to subtract 1??
 
     for (int i = 0; i < middle; i++) {
-      LArray[i] = values[i]; // first array
+      leftArray[i] = values[i]; // first array
     } // for
 
     for (int i = middle; i < values.length; i++) { // has to start at middle of values
-      RArray[i - middle] = values[i];
+      rightArray[i - middle] = values[i];
     } // for
 
-    sort(LArray);
-    sort(RArray);
+    sort(leftArray);
+    sort(rightArray);
 
-    for (; leftIndex < LArray.length && rightIndex < RArray.length; currIndex++) {
-      if (order.compare(LArray[leftIndex], RArray[rightIndex]) <= 0) {
-        values[currIndex] = LArray[leftIndex];
+    for (; leftIndex < leftArray.length && rightIndex < rightArray.length; currIndex++) {
+      if (order.compare(leftArray[leftIndex], rightArray[rightIndex]) <= 0) {
+        values[currIndex] = leftArray[leftIndex];
         leftIndex++;
       } else {
-        values[currIndex] = RArray[rightIndex];
+        values[currIndex] = rightArray[rightIndex];
         rightIndex++;
       } // if
     } // for
 
-    while (leftIndex < LArray.length) {
-      values[currIndex] = LArray[leftIndex];
+    while (leftIndex < leftArray.length) {
+      values[currIndex] = leftArray[leftIndex];
       leftIndex++;
       currIndex++;
     } // while
 
-    while (rightIndex < RArray.length) {
-      values[currIndex] = RArray[rightIndex];
+    while (rightIndex < rightArray.length) {
+      values[currIndex] = rightArray[rightIndex];
       rightIndex++;
       currIndex++;
     } // while
