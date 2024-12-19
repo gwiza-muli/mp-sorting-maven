@@ -6,6 +6,7 @@ import java.util.Comparator;
  * Something that sorts using insertion sort.
  *
  * @param <T> The types of values that are sorted.
+ * @author Sheilla Muligande
  *
  * @author Samuel A. Rebelsky
  */

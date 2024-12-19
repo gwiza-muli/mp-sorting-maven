@@ -1,6 +1,8 @@
 package edu.grinnell.csc207.sorting;
 /**
- * @author Sheilla Muligande a sorting algorithm inspired by insertion and selection sort.
+ * Something that sorts using a sorting algorithm
+ * inspired by insertion and selection sort.
+ * @author Sheilla Muligande 
  */
 public class MuligandeSheillaSort {
 

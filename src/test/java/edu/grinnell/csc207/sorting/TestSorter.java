@@ -16,7 +16,7 @@ import org.junit.jupiter.api.Test;
  * Tests of Sorter objects. Please do not use this class directly. Rather, you should subclass it
  * and initialize stringSorter and intSorter in a static @BeforeAll method.
  *
- * @author Your Name
+ * @author Sheilla Muligande
  * @uathor Samuel A. Rebelsky
  */
 public class TestSorter {

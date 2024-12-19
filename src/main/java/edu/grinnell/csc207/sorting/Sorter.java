@@ -4,6 +4,7 @@ package edu.grinnell.csc207.sorting;
  * Things that know how to sort arrays of values.
  *
  * @author Samuel A. Rebelsky
+ * @author Sheilla Muligande
  *
  * @param <T> The type of value in the array.
  */

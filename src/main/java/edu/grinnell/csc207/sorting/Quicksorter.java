@@ -9,6 +9,7 @@ import java.util.Random;
  * @param <T> The types of values that are sorted.
  *
  * @author Samuel A. Rebelsky
+ * @author Sheilla Muligande
  */
 
 public class Quicksorter<T> implements Sorter<T> {

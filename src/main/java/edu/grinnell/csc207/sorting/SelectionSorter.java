@@ -8,6 +8,7 @@ import java.util.Comparator;
  * @param <T> The types of values that are sorted.
  *
  * @author Samuel A. Rebelsky
+ * @author Sheilla Muligande
  */
 
 public class SelectionSorter<T> implements Sorter<T> {

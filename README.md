@@ -1,6 +1,7 @@
 # mp-sorting-maven
 
-An exploration of sorting in Java.
+An exploration of sorting in Java. This project implements Insertion, selection, merge, and quicksort. 
+I also add in my own sorting algorithm, which was aided by Chatgpt.
 
 Authors
 
@@ -8,7 +9,7 @@ Authors
 * Samuel A. Rebelsky (starter code)
 
 Acknowledgements
-Mitch Paiva for helping me understand Sam's diagram on the DNF algorithm
+Mitch Paiva for helping me understand Sam's diagram on the DNF algorithm before I implemented it.
 * _Forthcoming_.
 
 This code may be found at <https://github.com/gwiza-muli/mp-sorting-maven.git>. The original code may be found at <https://github.com/Grinnell-CSC207/mp-sorting-maven>.
@@ -16,8 +17,6 @@ This code may be found at <https://github.com/gwiza-muli/mp-sorting-maven.git>. 
 Description of custom sorting algorithm
 ---------------------------------------
 I applied selection sort to subarrays of a selected size, then I sorted those subarrays using insertion sort. 
-
-REMEMBER TO UPDATE!!!!!!!!!!!!!!!!!!!!!!!!!1
 
 Notes on using Copilot (or other AI)
 ------------------------------------
